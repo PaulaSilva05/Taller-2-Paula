@@ -14,7 +14,12 @@ plt.title("Distribución del año de fabricación")
 plt.show()
 
 #Grafico de viol+in segun el numero de dueños y el precio
-sns.violinplot(data=df, x="Owner", y="Selling_Price")
+sns.violinplot(
+    data=df,
+    x="Owner",
+    y="Selling_Price",
+    palette="Set2")
+
 plt.title("Precio de venta según número de dueños de la bicicleta")
 plt.show()
 
